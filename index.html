@@ -1,0 +1,595 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+
+    <!-- BS Icons CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css"
+    />
+
+    <!-- AOS Library -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+
+    <!-- MAPS API  -->
+    <link href="https://api.mapbox.com/mapbox-gl-js/v2.3.1/mapbox-gl.css" rel="stylesheet" />
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="styles.css" />
+
+    <title>Shamrock English School</title>
+  </head>
+  <body data-bs-spy="scroll">
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+      <div class="container">
+        <a class="navbar-brand" href="#">
+          <img src="img/clover.png" alt="logo" class="logo" />
+          <span class="h6">Shamrock English School</span>
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="offcanvas"
+          data-bs-target="#offcanvasNavbar"
+          aria-controls="offcanvasNavbar"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div
+          class="offcanvas offcanvas-start bg-light"
+          tabindex="-1"
+          id="offcanvasNavbar"
+          aria-labelledby="offcanvasNavbarLabel"
+        >
+          <div class="offcanvas-header mt-1 text-dark">
+            <div class="offcanvas-title" id="offcanvasNavbarLabel">
+              <img src="img/clover.png" alt="logo" class="logo" />
+              <span class="ps-2 text-dark">Shamrock English School</span>
+            </div>
+            <button
+              type="button"
+              class="offcanvas-close-btn times"
+              data-bs-dismiss="offcanvas"
+              aria-label="Close"
+            >
+              <i class="bi bi-x"></i>
+            </button>
+          </div>
+
+          <div class="offcanvas-body" tabindex="-1">
+            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+              <li class="nav-item my-1 me-3 offcanvas-close-btn" data-bs-dismiss="offcanvas">
+                <a class="nav-link" href="#home">Home</a>
+              </li>
+              <li class="nav-item my-1 me-3 offcanvas-close-btn" data-bs-dismiss="offcanvas">
+                <a class="nav-link" href="#courses">Courses</a>
+              </li>
+              <li class="nav-item my-1 me-3 offcanvas-close-btn" data-bs-dismiss="offcanvas">
+                <a class="nav-link" href="#about">About</a>
+              </li>
+              <li class="nav-item my-1 me-3 offcanvas-close-btn" data-bs-dismiss="offcanvas">
+                <a class="nav-link" href="#contact">Contact</a>
+              </li>
+              <li class="nav-item my-1 me-3 offcanvas-close-btn" data-bs-dismiss="offcanvas">
+                <a class="nav-link" href="#faq">FAQs</a>
+              </li>
+
+              <li class="nav-item my-1 me-1 offcanvas-close-btn" data-bs-dismiss="offcanvas">
+                <a class="nav-link btn btn-action text-white" href="#">Book a test</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero -->
+    <section class="hero-section text-white text-center" id="home">
+      <div class="container">
+        <div class="row greeting">
+          <div class="col-12" data-aos="zoom-in">
+            <h1 class="display-5 fw-bold">Shamrock School of English</h1>
+            <p class="lead">Lorem, ipsum dolor sit amet consectetur adipisicing elit. <br /></p>
+            <a href="#courses" class="btn btn-action-2 text-light">Courses</a>
+          </div>
+        </div>
+        <!-- Testimonials -->
+        <div class="row testimonials text-center pt-4">
+          <div class="col-12">
+            <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <div class="testimonial" data-aos="zoom-up">
+                    <div class="testimonial-header">
+                      <img
+                        src="https://randomuser.me/api/portraits/men/15.jpg"
+                        class="rounded-circle"
+                        alt="#"
+                      />
+                      <div class="testimonial-info">
+                        <h5 class="mb-0">Benoit Gant</h5>
+                        <div class="stars">
+                          <i class="bi bi-star-fill"></i>
+                          <i class="bi bi-star-fill"></i>
+                          <i class="bi bi-star-fill"></i>
+                          <i class="bi bi-star-fill"></i>
+                          <i class="bi bi-star-fill"></i>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="testimonial-text">
+                      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <div class="testimonial">
+                    <div class="testimonial-header">
+                      <img
+                        src="https://randomuser.me/api/portraits/men/10.jpg"
+                        class="rounded-circle"
+                        alt="#"
+                      />
+                      <div class="testimonial-info">
+                        <h5 class="mb-0">Javier Sanchez</h5>
+                        <div class="stars">
+                          <i class="bi bi-star-fill"></i>
+                          <i class="bi bi-star-fill"></i>
+                          <i class="bi bi-star-fill"></i>
+                          <i class="bi bi-star-fill"></i>
+                          <i class="bi bi-star-fill"></i>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="testimonial-text">
+                      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <div class="testimonial">
+                    <div class="testimonial-header">
+                      <img
+                        src="https://randomuser.me/api/portraits/men/7.jpg"
+                        class="rounded-circle"
+                        alt="#"
+                      />
+                      <div class="testimonial-info">
+                        <h5 class="mb-0">Pedro Gomez</h5>
+                        <div class="stars">
+                          <i class="bi bi-star-fill"></i>
+                          <i class="bi bi-star-fill"></i>
+                          <i class="bi bi-star-fill"></i>
+                          <i class="bi bi-star-fill"></i>
+                          <i class="bi bi-star-fill"></i>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="testimonial-text">
+                      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <button
+                class="carousel-control-prev"
+                type="button"
+                data-bs-target="#carouselExampleControls"
+                data-bs-slide="prev"
+              >
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button
+                class="carousel-control-next"
+                type="button"
+                data-bs-target="#carouselExampleControls"
+                data-bs-slide="next"
+              >
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Courses -->
+    <section id="courses" class="courses-section bg-light">
+      <div class="container">
+        <!-- Section intro -->
+        <div class="row text-center" data-aos="fade-up">
+          <div class="col-12">
+            <h2 class="display-5 fw-bolder">Our Courses</h2>
+            <div class="underline"></div>
+          </div>
+        </div>
+        <!-- Section content -->
+        <div class="row g-4 mt-3">
+          <div class="col-md-4 text-center">
+            <div class="course" data-aos="zoom-in">
+              <i class="bi bi-stopwatch h1"></i>
+              <h5 class="mt-4 mb-3">Part-time English Course</h5>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel labore sed est sunt.
+              </p>
+              <a href="#" class="btn btn-action-2">More info</a>
+            </div>
+          </div>
+          <div class="col-md-4 text-center">
+            <div class="course" data-aos="zoom-in">
+              <i class="bi bi-stopwatch-fill h1"></i>
+              <h5 class="mt-4 mb-3">Full-time English Course</h5>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel labore sed est sunt.
+              </p>
+              <a href="#" class="btn btn-action-2">More info</a>
+            </div>
+          </div>
+          <div class="col-md-4 text-center">
+            <div class="course" data-aos="zoom-in">
+              <i class="bi bi-emoji-sunglasses h1"></i>
+              <h5 class="mt-4 mb-3">Summer Courses</h5>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel labore sed est sunt.
+              </p>
+              <a href="#" class="btn btn-action-2">More info</a>
+            </div>
+          </div>
+          <div class="col-md-4 text-center">
+            <div class="course" data-aos="zoom-in">
+              <i class="bi bi-book h1"></i>
+              <h5 class="mt-4 mb-3">Exams Preparation</h5>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel labore sed est sunt.
+              </p>
+              <a href="#" class="btn btn-action-2">More info</a>
+            </div>
+          </div>
+          <div class="col-md-4 text-center">
+            <div class="course" data-aos="zoom-in">
+              <i class="bi bi-chat-text-fill h1"></i>
+              <h5 class="mt-4 mb-3">Conversation Course</h5>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel labore sed est sunt.
+              </p>
+              <a href="#" class="btn btn-action-2">More info</a>
+            </div>
+          </div>
+          <div class="col-md-4 text-center">
+            <div class="course" data-aos="zoom-in">
+              <i class="bi bi-book-half h1"></i>
+              <h5 class="mt-4 mb-3">Business English</h5>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel labore sed est sunt.
+              </p>
+              <a href="#" class="btn btn-action-2">More info</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About -->
+    <section id="about" class="about-section text-white">
+      <div class="container">
+        <!-- Section intro -->
+        <div class="row text-center py-4" data-aos="fade-up">
+          <div class="col-12">
+            <h2 class="display-5 fw-bolder">About Us</h2>
+            <div class="underline"></div>
+          </div>
+        </div>
+        <!-- Section Content -->
+        <div class="row mt-5 text-center">
+          <div class="col-md-3" data-aos="zoom-in">
+            <i class="bi bi-book h1"></i>
+            <h3 class="mt-3 mb-2">15+</h3>
+            <p>Courses</p>
+          </div>
+          <div class="col-md-3" data-aos="zoom-in">
+            <i class="bi bi-building h1"></i>
+            <h3 class="mt-3 mb-2">10</h3>
+            <p>Study areas</p>
+          </div>
+          <div class="col-md-3" data-aos="zoom-in">
+            <i class="bi bi-people h1"></i>
+            <h3 class="mt-3 mb-2">3k+</h3>
+            <p>Happy Students</p>
+          </div>
+          <div class="col-md-3" data-aos="zoom-in">
+            <i class="bi bi-geo-alt-fill h1"></i>
+            <h3 class="mt-3 mb-2">Location</h3>
+            <p>City Center</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Teachers -->
+    <section id="teachers" class="teachers-section bg-light">
+      <div class="container">
+        <!-- Section intro -->
+        <div class="row text-center pb-3" data-aos="fade-up">
+          <div class="col-12">
+            <h2 class="display-5 fw-bolder">Our teachers</h2>
+            <div class="underline"></div>
+          </div>
+        </div>
+        <!-- Section content -->
+        <div class="row mt-3">
+          <div class="col-md-4 p-4">
+            <div class="teacher text-center" data-aos="zoom-in">
+              <img
+                src="https://randomuser.me/api/portraits/women/43.jpg"
+                class="rounded-circle"
+                alt="#"
+              />
+              <h3 class="mt-4 mb-3">Jane Doe</h3>
+              <p class="px-3">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque, quaerat?
+              </p>
+            </div>
+          </div>
+          <div class="col-md-4 p-4">
+            <div class="teacher text-center" data-aos="zoom-in">
+              <img
+                src="https://randomuser.me/api/portraits/women/3.jpg"
+                class="rounded-circle"
+                alt="#"
+              />
+              <h3 class="mt-4 mb-4">Jane Doe</h3>
+              <p class="px-3">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque, quaerat?
+              </p>
+            </div>
+          </div>
+          <div class="col-md-4 p-4">
+            <div class="teacher text-center" data-aos="zoom-in">
+              <img
+                src="https://randomuser.me/api/portraits/women/33.jpg"
+                class="rounded-circle"
+                alt="#"
+              />
+              <h3 class="mt-4 mb-3">Jane Doe</h3>
+              <p class="px-3">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque, quaerat?
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="contact-section text-white">
+      <div class="container">
+        <!-- Section intro -->
+        <div class="row text-center py-4" data-aos="fade-up">
+          <div class="col-12">
+            <h2 class="display-5 fw-bolder">Contact</h2>
+            <div class="underline"></div>
+          </div>
+        </div>
+
+        <!-- Section content -->
+        <div class="row my-3">
+          <div class="col-12 col-md-6 align-items-center" data-aos="zoom-in">
+            <ul class="list-group list-group-flush lead p-4">
+              <li class="list-group-item">
+                <span class="fw-bold">Main Location:</span> 45 Dame Street, Dublin 2.
+              </li>
+              <li class="list-group-item">
+                <span class="fw-bold">Enrollment Phone:</span> 01 333 55 01
+              </li>
+              <li class="list-group-item">
+                <span class="fw-bold">Student Phone:</span> 01 333 55 05
+              </li>
+              <li class="list-group-item">
+                <span class="fw-bold">Enrollment Email:</span> enrollment.school@email.com
+              </li>
+              <li class="list-group-item">
+                <span class="fw-bold">Student Email:</span> student.school@email.com
+              </li>
+            </ul>
+          </div>
+          <div class="col-12 col-md-6 p-4 pt-0" data-aos="zoom-in">
+            <div id="map"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQs -->
+    <section id="faq" class="faq-section">
+      <div class="container">
+        <!-- Section intro -->
+        <div class="row text-center pb-3" data-aos="fade-up">
+          <div class="col-12">
+            <h2 class="display-5 fw-bolder">FAQs</h2>
+            <div class="underline"></div>
+          </div>
+        </div>
+
+        <div class="accordion accordion-flush text-dark px-2 pb-5 mt-3" id="questions">
+          <!-- Item 1 -->
+          <div class="accordion-item" data-aos="zoom-in">
+            <h2 class="accordion-header">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#question-one"
+              >
+                Where exactly are you located?
+              </button>
+            </h2>
+            <div id="question-one" class="accordion-collapse collapse" data-bs-parent="#questions">
+              <div class="accordion-body">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia, quidem tenetur
+                porro quibusdam sint dolor molestias perferendis? Optio nam consequuntur minus
+                soluta modi natus voluptatibus, quos velit ad veniam temporibus debitis commodi
+                quisquam illum. Quibusdam eligendi cumque necessitatibus, id quam, et dolor
+                cupiditate minima consequatur deleniti quis commodi magni vel?
+              </div>
+            </div>
+          </div>
+
+          <!-- Item 2 -->
+          <div class="accordion-item" data-aos="zoom-in">
+            <h2 class="accordion-header">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#question-two"
+              >
+                How much does it cost to attend?
+              </button>
+            </h2>
+            <div id="question-two" class="accordion-collapse collapse" data-bs-parent="#questions">
+              <div class="accordion-body">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia, quidem tenetur
+                porro quibusdam sint dolor molestias perferendis? Optio nam consequuntur minus
+                soluta modi natus voluptatibus, quos velit ad veniam temporibus debitis commodi
+                quisquam illum. Quibusdam eligendi cumque necessitatibus, id quam, et dolor
+                cupiditate minima consequatur deleniti quis commodi magni vel?
+              </div>
+            </div>
+          </div>
+
+          <!-- Item 3 -->
+          <div class="accordion-item" data-aos="zoom-in">
+            <h2 class="accordion-header">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#question-three"
+              >
+                What do I need to know?
+              </button>
+            </h2>
+            <div
+              id="question-three"
+              class="accordion-collapse collapse"
+              data-bs-parent="#questions"
+            >
+              <div class="accordion-body">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia, quidem tenetur
+                porro quibusdam sint dolor molestias perferendis? Optio nam consequuntur minus
+                soluta modi natus voluptatibus, quos velit ad veniam temporibus debitis commodi
+                quisquam illum. Quibusdam eligendi cumque necessitatibus, id quam, et dolor
+                cupiditate minima consequatur deleniti quis commodi magni vel?
+              </div>
+            </div>
+          </div>
+
+          <!-- Item 4 -->
+          <div class="accordion-item" data-aos="zoom-in">
+            <h2 class="accordion-header">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#question-four"
+              >
+                How do I sign up?
+              </button>
+            </h2>
+            <div id="question-four" class="accordion-collapse collapse" data-bs-parent="#questions">
+              <div class="accordion-body">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia, quidem tenetur
+                porro quibusdam sint dolor molestias perferendis? Optio nam consequuntur minus
+                soluta modi natus voluptatibus, quos velit ad veniam temporibus debitis commodi
+                quisquam illum. Quibusdam eligendi cumque necessitatibus, id quam, et dolor
+                cupiditate minima consequatur deleniti quis commodi magni vel?
+              </div>
+            </div>
+          </div>
+
+          <!-- Item 5 -->
+          <div class="accordion-item" data-aos="zoom-in">
+            <h2 class="accordion-header">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#question-five"
+              >
+                Do you help me find a job?
+              </button>
+            </h2>
+            <div id="question-five" class="accordion-collapse collapse" data-bs-parent="#questions">
+              <div class="accordion-body">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia, quidem tenetur
+                porro quibusdam sint dolor molestias perferendis? Optio nam consequuntur minus
+                soluta modi natus voluptatibus, quos velit ad veniam temporibus debitis commodi
+                quisquam illum. Quibusdam eligendi cumque necessitatibus, id quam, et dolor
+                cupiditate minima consequatur deleniti quis commodi magni vel?
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- footer -->
+    <footer class="main-footer bg-dark-blue">
+      <div class="container py-3">
+        <span class="pt-2 mx-auto">Copyright &copy; 2022. Javier Robles</span>
+        <div class="socials py-1 mx-auto">
+          <a href="#">
+            <i class="bi bi-facebook"></i>
+          </a>
+          <a href="#">
+            <i class="bi bi-instagram"></i>
+          </a>
+          <a href="#">
+            <i class="bi bi-linkedin"></i>
+          </a>
+          <a href="#">
+            <i class="bi bi-youtube"></i>
+          </a>
+          <a href="#">
+            <i class="bi bi-whatsapp"></i>
+          </a>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Back to top -->
+    <button type="button" class="btn btn-floating btn-lg" id="btn-back-to-top">
+      <i class="bi bi-arrow-up-circle-fill"></i>
+    </button>
+
+    <!-- Bootstrap Bundle with Popper -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- AOS Library JS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <!-- MAPS JS -->
+    <script src="https://api.mapbox.com/mapbox-gl-js/v2.3.1/mapbox-gl.js"></script>
+
+    <!-- JS -->
+    <script src="app.js"></script>
+  </body>
+</html>
